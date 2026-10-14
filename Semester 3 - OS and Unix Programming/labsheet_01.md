@@ -44,32 +44,6 @@
 
 <br>
 
-- ### `mkdir`
-  
-  Creates a new directory
-
-  ```
-  > mkdir DemoFolder
-  > ls
-  DemoFolder Files
-  ```
-
-<br>
-
-- ### `rmdir`
-  
-  Removes an empty directory
-
-  ```
-  > rmdir DemoFolder
-  > ls
-  Files
-  ```
-
-  **NOTE:** `rmdir` only deletes empty directories. To force it, use `-r` flag to delete directories with files.
-
-<br>
-
 - ### `whoami`
 
   Displays the current user
@@ -88,6 +62,51 @@
   ```
   > date
   Wed Oct 14 08:38:15 PM IST 2026
+  ```
+
+<br>
+
+- ### `cal`
+
+  Displays the calendar of the given year
+
+  ```
+  > cal 2026
+                              2026
+        January               February               March          
+  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+              1  2  3   1  2  3  4  5  6  7   1  2  3  4  5  6  7  
+  4  5  6  7  8  9 10   8  9 10 11 12 13 14   8  9 10 11 12 13 14  
+  11 12 13 14 15 16 17  15 16 17 18 19 20 21  15 16 17 18 19 20 21  
+  18 19 20 21 22 23 24  22 23 24 25 26 27 28  22 23 24 25 26 27 28  
+  25 26 27 28 29 30 31                        29 30 31              
+                                                                    
+
+        April                  May                   June          
+  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+            1  2  3  4                  1  2      1  2  3  4  5  6  
+  5  6  7  8  9 10 11   3  4  5  6  7  8  9   7  8  9 10 11 12 13  
+  12 13 14 15 16 17 18  10 11 12 13 14 15 16  14 15 16 17 18 19 20  
+  19 20 21 22 23 24 25  17 18 19 20 21 22 23  21 22 23 24 25 26 27  
+  26 27 28 29 30        24 25 26 27 28 29 30  28 29 30              
+                        31                                          
+
+          July                 August              September        
+  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+            1  2  3  4                     1         1  2  3  4  5  
+  5  6  7  8  9 10 11   2  3  4  5  6  7  8   6  7  8  9 10 11 12  
+  12 13 14 15 16 17 18   9 10 11 12 13 14 15  13 14 15 16 17 18 19  
+  19 20 21 22 23 24 25  16 17 18 19 20 21 22  20 21 22 23 24 25 26  
+  26 27 28 29 30 31     23 24 25 26 27 28 29  27 28 29 30           
+                        30 31                                       
+
+        October               November              December        
+  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+              1  2  3   1  2  3  4  5  6  7         1  2  3  4  5  
+  4  5  6  7  8  9 10   8  9 10 11 12 13 14   6  7  8  9 10 11 12  
+  11 12 13 14 15 16 17  15 16 17 18 19 20 21  13 14 15 16 17 18 19  
+  18 19 20 21 22 23 24  22 23 24 25 26 27 28  20 21 22 23 24 25 26  
+  25 26 27 28 29 30 31  29 30                 27 28 29 30 31      
   ```
 
 <br>
@@ -122,102 +141,6 @@
                 do not list implied . and ..
         
         ...
-  ```
-
-<br>
-
-- ### `touch`
-
-  Creates a file
-
-  ```
-  > touch demo.txt
-  > ls
-  demo.txt
-  ```
-
-<br>
-
-- ### `rm`
-
-  Deletes a file permanently
-
-  ```
-  > rm some_file.txt
-  ```
-
-<br>
-
-- ### `cat`
-
-  Displays the contents inside a file.  
-  It can be also be used to edit the contents of a file.
-
-  ```
-  > cat > demo.txt
-  Hello, I am Yashwanth M.
-  Ummm... I don't know what to say :)
-  ^C
-  ```
-  ```
-  > cat demo.txt
-  Hello, I am Yashwanth M.
-  Ummm... I don't know what to say :)
-  ```
-
-<br>
-
-- ### `cp`
-
-  Copies contents of one file to another
-
-  ```
-  > cp demo.txt demo_copy.txt
-  > cat demo_copy.txt
-  Hello, I am Yashwanth M.
-  Ummm... I don't know what to say :)
-  Have a nice dayyyyy!
-  VI Editor is bullsh*t!!!
-  ```
-
-<br>
-
-- ### `mv`
-
-  Moves or renames files and folders
-
-  ```
-  > mv demo_copy.txt final.txt
-  > ls
-  final.txt
-  ```
-  ```
-  > mkdir DemoText
-  > mv final.txt DemoText
-  > cd DemoText
-  > ls
-  final.txt
-  ```
-
-<br>
-
-- ### `sort`
-
-  Sorts the contents of a file
-
-  ```
-  > cat numbers.txt
-  5
-  2
-  1
-  4
-  3
-  > sort numbers.txt
-  1
-  2
-  3
-  4
-  5
   ```
 
 <br>
@@ -262,3 +185,15 @@
   Have a nice dayyyyy!
   VI Editor is bullsh*t!!!
   ```
+
+<br>
+
+- ### `clear`
+
+  Clears the terminal and gives a fresh one.
+
+<br>
+
+- ### `exit`
+
+  Exits the terminal
